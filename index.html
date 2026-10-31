@@ -52,6 +52,21 @@
     }
     img { max-width: 100%; height: auto; display: block; }
     a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--terra-clara);
+      outline-offset: 3px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
 
     .cabecalho-selo {
       background: var(--folha);
@@ -90,6 +105,14 @@
       0% { opacity: 1; }
       50% { opacity: 0.4; }
       100% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
     }
     .chamada h1 {
       font-family: 'Figtree', system-ui, sans-serif;
@@ -449,11 +472,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
       padding: 0.88rem 0;
       cursor: pointer;
       gap: 0.5rem;
       font-size: 0.9rem;
       font-weight: 800;
+      font-family: inherit;
+      color: var(--tinta);
+      background: transparent;
+      border: 0;
+      text-align: left;
       user-select: none;
       touch-action: manipulation;
     }
@@ -582,7 +611,7 @@
     </div>
 
     <figure class="capa">
-     <img src="capa-miguel-respirar.jpg" alt="Miguelzinho em tratamento contra o Sarcoma" class="capa-img" fetchpriority="high" width="600" height="800" decoding="async">
+     <img src="capa-miguel-respirar.jpg" alt="Miguelzinho em tratamento contra o Sarcoma" class="capa-img" fetchpriority="high" width="600" height="800" decoding="sync">
       <figcaption class="capa-nota">Miguelzinho hoje: Enfrentando há 4 meses as dores e o desgaste do Sarcoma de Partes Moles na coluna...</figcaption>
     </figure>
 
@@ -610,27 +639,27 @@
 
       <!-- Grade de Botões de Valores Rápidos -->
       <div class="grade-valores">
-        <button class="btn-valor" onclick="selecionarValor('10')">R$ 10</button>
-        <button class="btn-valor" onclick="selecionarValor('20')">R$ 20</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('10')">R$ 10</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('20')">R$ 20</button>
         
         <div class="btn-valor-caixa-destaque">
           <span class="tag-destaque">🔥 MAIS ESCOLHIDO</span>
           <button class="btn-valor btn-destaque" onclick="selecionarValor('50')">R$ 50</button>
         </div>
 
-        <button class="btn-valor" onclick="selecionarValor('100')">R$ 100</button>
-        <button class="btn-valor" onclick="selecionarValor('200')">R$ 200</button>
-        <button class="btn-valor" onclick="selecionarValor('300')">R$ 300</button>
-        <button class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
-        <button class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('100')">R$ 100</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('200')">R$ 200</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('300')">R$ 300</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
+        <button type="button" class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
       </div>
      
       <div style="text-align: center; margin: 25px 0;">
           <!-- Imagem do QR Code -->
-          <img src="flow.jpg" alt="QR Code Pix" width="400" height="400" loading="lazy" decoding="async" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto 15px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+          <img src="flow.jpg" alt="Código QR para fazer uma doação via Pix" width="400" height="400" loading="lazy" decoding="async" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto 15px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
 
           <!-- Botão de Copiar Chave Pix -->
-          <button onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 15px 30px; font-size: 19px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+          <button type="button" onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 15px 30px; font-size: 19px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
               📋 Copiar Chave Pix (E-mail)
           </button>
       </div>
@@ -639,23 +668,43 @@
       <script>
       function selecionarValor(valor) {
           document.querySelectorAll('.btn-valor').forEach(btn => btn.classList.remove('selecionado'));
-          event.target.classList.add('selecionado');
+          const alvo = String(valor);
+          document.querySelectorAll('.btn-valor').forEach(btn => {
+              if (btn.textContent.replace(/\D/g, '') === alvo) btn.classList.add('selecionado');
+          });
           copiarPix();
       }
 
       function copiarPix() {
-          const chavePix = "pixpelomiguel@gmail.com"; 
-          
-          navigator.clipboard.writeText(chavePix).then(() => {
-              const btn = document.getElementById("btn-copiar-pix");
-              btn.innerHTML = "✅ Chave Pix Copiada com Sucesso!";
+          const chavePix = "pixpelomiguel@gmail.com";
+          const btn = document.getElementById("btn-copiar-pix");
+
+          const confirmar = () => {
+              btn.textContent = "✅ Chave Pix Copiada com Sucesso!";
               btn.style.backgroundColor = "#128c7e";
-              
               setTimeout(() => {
-                  btn.innerHTML = "📋 Copiar Chave Pix (E-mail)";
+                  btn.textContent = "📋 Copiar Chave Pix (E-mail)";
                   btn.style.backgroundColor = "#25d366";
               }, 3000);
-          });
+          };
+
+          const fallback = () => {
+              const area = document.createElement("textarea");
+              area.value = chavePix;
+              area.setAttribute("readonly", "");
+              area.style.position = "fixed";
+              area.style.opacity = "0";
+              document.body.appendChild(area);
+              area.select();
+              try { document.execCommand("copy"); confirmar(); }
+              finally { document.body.removeChild(area); }
+          };
+
+          if (navigator.clipboard && window.isSecureContext) {
+              navigator.clipboard.writeText(chavePix).then(confirmar).catch(fallback);
+          } else {
+              fallback();
+          }
       }
       </script>
 
@@ -720,7 +769,7 @@
 
       <div class="depoimento">
         <div class="depoimento-topo">
-          <img src="comentario-taina.jpg" alt="" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 48% 22%;">
+          <img src="comentario-taina.jpg" alt="Foto de Roberta Lima" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 48% 22%;">
           <div>
             <div class="depoimento-nome">Roberta Lima</div>
             <div class="depoimento-tempo">há 22 minutos</div>
@@ -732,7 +781,7 @@
 
       <div class="depoimento">
         <div class="depoimento-topo">
-          <img src="comentario-henrique.jpg" alt="" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 18%;">
+          <img src="comentario-henrique.jpg" alt="Foto de Flávio Martins" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 18%;">
           <div>
             <div class="depoimento-nome">Flávio Martins</div>
             <div class="depoimento-tempo">há 1 hora</div>
@@ -744,7 +793,7 @@
 
       <div class="depoimento">
         <div class="depoimento-topo">
-          <img src="comentario-luciana.jpg" alt="" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 10%;">
+          <img src="comentario-luciana.jpg" alt="Foto de Simone Fátima" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 10%;">
           <div>
             <div class="depoimento-nome">Simone Fátima</div>
             <div class="depoimento-tempo">há 3 horas</div>
@@ -766,28 +815,40 @@
     <section class="faq-ar">
       <h3>Perguntas frequentes</h3>
       <div class="faq-linha">
-        <div class="faq-pergunta">O que é o Sarcoma de Partes Moles do Miguelzinho? <span class="faq-sinal">+</span></div>
-        <div class="faq-resposta">É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-1">
+          <span>O que é o Sarcoma de Partes Moles do Miguelzinho?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-1" hidden>É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
       </div>
       <div class="faq-linha">
-        <div class="faq-pergunta">Como faço para contribuir? <span class="faq-sinal">+</span></div>
-        <div class="faq-resposta">Basta escolher um valor, copiar a chave Pix ou escanear o QR Code no seu aplicativo do banco. O envio é rápido e seguro.</div>
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-2">
+          <span>Como faço para contribuir?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-2" hidden>Basta escolher um valor, copiar a chave Pix ou escanear o QR Code no seu aplicativo do banco. O envio é rápido e seguro.</div>
       </div>
       <div class="faq-linha">
-        <div class="faq-pergunta">O que é o Sarcoma de Partes Moles? <span class="faq-sinal">+</span></div>
-        <div class="faq-resposta">É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-3">
+          <span>O que é o Sarcoma de Partes Moles?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-3" hidden>É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
       </div>
       <div class="faq-linha">
-        <div class="faq-pergunta">A doação por Pix é segura? <span class="faq-sinal">+</span></div>
-        <div class="faq-resposta">Sim, totalmente segura. O dinheiro vai direto para a conta oficial da família cuidar do tratamento médico dele.</div>
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-4">
+          <span>A doação por Pix é segura?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-4" hidden>Sim, totalmente segura. O dinheiro vai direto para a conta oficial da família cuidar do tratamento médico dele.</div>
       </div>
       <div class="faq-linha">
-        <div class="faq-pergunta">Posso ajudar de outro jeito? <span class="faq-sinal">+</span></div>
-        <div class="faq-resposta">Sim! Envie o link desta página no WhatsApp para seus amigos e familiares. Quanto mais pessoas souberem, mais rápido alcançamos a meta.</div>
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-5">
+          <span>Posso ajudar de outro jeito?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-5" hidden>Sim! Envie o link desta página no WhatsApp para seus amigos e familiares. Quanto mais pessoas souberem, mais rápido alcançamos a meta.</div>
       </div>
       <div class="faq-linha">
-        <div class="faq-pergunta">Para onde vai o dinheiro arrecadado? <span class="faq-sinal">+</span></div>
-        <div class="faq-resposta">100% do dinheiro é utilizado inteiramente na compra dos remédios e nos gastos com o tratamento do câncer.</div>
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-6">
+          <span>Para onde vai o dinheiro arrecadado?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-6" hidden>100% do dinheiro é utilizado inteiramente na compra dos remédios e nos gastos com o tratamento do câncer.</div>
       </div>
     </section>
 
@@ -800,14 +861,19 @@
   </footer>
 
   <!-- Botões Fixos Inferiores (WhatsApp e Doação sem âncora) -->
-  <a href="https://wa.me/5519987378488?text=Olá,%20vi%20a%20campanha%20do%20Miguelzinho%20e%20gostaria%20de%20falar%20com%20a%20família." target="_blank" class="whatsapp-fixo">💬 Falar com o Pai do Miguelzinho (WhatsApp)</a>
-  <a href="https://wa.me/5519987378488?text=Olá,%20quero%20ajudar%20o%20Miguelzinho%20com%20o%20Pix." target="_blank" class="cta-fixo">DOAR VIA PIX AGORA PARA SALVAR O MIGUELZINHO 🙏</a>
+  <a href="https://wa.me/5519987378488?text=Olá,%20vi%20a%20campanha%20do%20Miguelzinho%20e%20gostaria%20de%20falar%20com%20a%20família." target="_blank" class="whatsapp-fixo" aria-label="Falar com o pai do Miguelzinho pelo WhatsApp">💬 Falar com o Pai do Miguelzinho (WhatsApp)</a
+  <a href="https://wa.me/5519987378488?text=Olá,%20quero%20ajudar%20o%20Miguelzinho%20com%20o%20Pix." target="_blank" class="cta-fixo" aria-label="Falar com o pai do Miguelzinho pelo WhatsApp para doar via Pix">DOAR VIA PIX AGORA PARA SALVAR O MIGUELZINHO 🙏</a
 
   <script>
     document.querySelectorAll('.faq-pergunta').forEach(function (item) {
       item.addEventListener('click', function () {
-        this.classList.toggle('expandida');
-        this.nextElementSibling.classList.toggle('expandida');
+        const resposta = this.nextElementSibling;
+        const expandida = this.getAttribute('aria-expanded') === 'true';
+
+        this.setAttribute('aria-expanded', String(!expandida));
+        this.classList.toggle('expandida', !expandida);
+        resposta.hidden = expandida;
+        resposta.classList.toggle('expandida', !expandida);
       });
     });
   </script>
