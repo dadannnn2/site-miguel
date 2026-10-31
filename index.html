@@ -1,859 +1,934 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <meta name="theme-color" content="#4a2b22">
-  <title>URGENTE: O pequeno Miguelzinho precisa da sua ajuda contra o Sarcoma de Partes Moles | Abrace uma Vida</title>
-  <meta name="description" content="Miguelzinho enfrenta um Sarcoma de Partes Moles agressivo na coluna há 4 meses e precisa de tratamento urgente. Abrace uma Vida.">
-  
-  <!-- Preload e otimização máxima de carregamento para mobile -->
-  <link rel="preload" as="image" href="capa-miguel-respirar.jpg" fetchpriority="high">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTBQL7467"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STTBQL7467');
+  </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="_ext/fonts.googleapis.com/assets/css2" rel="stylesheet" media="print" onload="this.media='all'">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=true;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2329575777877928');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2329575777877928&ev=PageView&noscript=1"/></noscript>
 
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="#4a2b22">
+  <title>URGENTE: O pequeno Miguelzinho precisa da sua ajuda contra o Sarcoma de Partes Moles | Abrace uma Vida</title>
+  <meta name="description" content="Miguelzinho enfrenta um Sarcoma de Partes Moles agressivo na coluna há 4 meses e precisa de tratamento urgente. Abrace uma Vida.">
+  
+  <!-- Preload e otimização máxima de carregamento para mobile -->
+  <link rel="preload" as="image" href="capa-miguel-respirar.jpg" fetchpriority="high">
 
-    :root {
-      --brasa:      #e8432b;
-      --brasa-fundo:  #c7331d;
-      --brasa-veu:    #fdeae5;
-      --terra:      #e3832f;
-      --terra-fundo:  #c86c1f;
-      --terra-clara:  #f6a93b;
-      --cacau:      #4a2b22;
-      --cacau-noite:  #30170f;
-      --creme:      #fdf1e6;
-      --creme-fundo:  #f8e2cd;
-      --papel:      #fffaf5;
-      --folha:      #ffffff;
-      --tinta:      #3b231c;
-      --tinta-media:  #7c5c4f;
-      --linha:      #ecd8c5;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="_ext/fonts.googleapis.com/assets/css2" rel="stylesheet" media="print" onload="this.media='all'">
 
-    html { 
-      scroll-behavior: smooth; 
-      -webkit-tap-highlight-color: transparent;
-    }
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body {
-      font-family: 'Mulish', system-ui, -apple-system, sans-serif;
-      background: var(--papel);
-      color: var(--tinta);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-      text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; text-decoration: none; }
-    a:focus-visible, button:focus-visible {
-      outline: 3px solid var(--terra-clara);
-      outline-offset: 3px;
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
+    :root {
+      --brasa:        #e8432b;
+      --brasa-fundo:  #c7331d;
+      --brasa-veu:    #fdeae5;
+      --terra:        #e3832f;
+      --terra-fundo:  #c86c1f;
+      --terra-clara:  #f6a93b;
+      --cacau:        #4a2b22;
+      --cacau-noite:  #30170f;
+      --creme:        #fdf1e6;
+      --creme-fundo:  #f8e2cd;
+      --papel:        #fffaf5;
+      --folha:        #ffffff;
+      --tinta:        #3b231c;
+      --tinta-media:  #7c5c4f;
+      --linha:        #ecd8c5;
+    }
 
-    .cabecalho-selo {
-      background: var(--folha);
-      border-bottom: 3px solid var(--terra);
-      padding: 0.55rem 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .selo-figura {
-      height: 94px;
-      width: auto;
-      object-fit: contain;
-    }
+    html { 
+      scroll-behavior: smooth; 
+      -webkit-tap-highlight-color: transparent;
+    }
 
-    .coluna { max-width: 640px; margin: 0 auto; padding: 0 1.15rem; }
+    body {
+      font-family: 'Mulish', system-ui, -apple-system, sans-serif;
+      background: var(--papel);
+      color: var(--tinta);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--terra-clara);
+      outline-offset: 3px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
 
-    .chamada { padding: 1.55rem 0 1.05rem; text-align: center; }
-    .chamada-tag {
-      display: inline-block;
-      background: var(--brasa-veu);
-      color: var(--brasa-fundo);
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.35rem 0.95rem;
-      border-radius: 4px;
-      margin-bottom: 0.8rem;
-      border: 1px solid #f7c9bd;
-      font-family: 'Figtree', sans-serif;
-      animation: piscar 1.8s infinite;
-      will-change: opacity;
-    }
-    @keyframes piscar {
-      0% { opacity: 1; }
-      50% { opacity: 0.4; }
-      100% { opacity: 1; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-    .chamada h1 {
-      font-family: 'Figtree', system-ui, sans-serif;
-      font-size: clamp(1.42rem, 5.2vw, 2rem);
-      font-weight: 800;
-      line-height: 1.22;
-      color: var(--cacau);
-      margin-bottom: 0.7rem;
-      text-wrap: balance;
-    }
-    .chamada p {
-      font-size: 1rem;
-      color: var(--tinta-media);
-      line-height: 1.7;
-      max-width: 540px;
-      margin: 0 auto;
-    }
+    .cabecalho-selo {
+      background: var(--folha);
+      border-bottom: 3px solid var(--terra);
+      padding: 0.55rem 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .selo-figura {
+      height: 94px;
+      width: auto;
+      object-fit: contain;
+    }
 
-    .capa { margin-bottom: 1.45rem; }
-    .capa-img {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      max-height: min(86vh, 680px);
-      object-fit: cover;
-      object-position: center 18%;
-      border-radius: 8px 8px 0 0;
-      box-shadow: 0 10px 28px rgba(74,43,34,0.24);
-    }
-    .capa-nota {
-      background: var(--cacau);
-      color: rgba(255,255,255,0.88);
-      border-radius: 0 0 8px 8px;
-      padding: 0.72rem 1rem;
-      font-size: 0.8rem;
-      font-style: italic;
-      line-height: 1.5;
-    }
+    .coluna { max-width: 640px; margin: 0 auto; padding: 0 1.15rem; }
 
-    .painel-meta {
-      background: var(--folha);
-      border: 1px solid var(--linha);
-      border-radius: 8px;
-      padding: 1.3rem 1.15rem 1.1rem;
-      margin-bottom: 1.35rem;
-      box-shadow: 0 4px 18px rgba(74,43,34,0.08);
-    }
-    .painel-topo {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 0.8rem;
-    }
-    .painel-cifra {
-      font-size: 1.92rem;
-      font-weight: 800;
-      color: var(--terra-fundo);
-      line-height: 1;
-      font-family: 'Figtree', sans-serif;
-    }
-    .painel-sub { font-size: 0.76rem; color: var(--tinta-media); margin-top: 0.28rem; }
-    .painel-pct {
-      font-size: 1.92rem;
-      font-weight: 800;
-      color: var(--brasa);
-      line-height: 1;
-      text-align: right;
-      font-family: 'Figtree', sans-serif;
-    }
-    .painel-pct small {
-      display: block;
-      font-size: 0.6rem;
-      font-weight: 800;
-      color: var(--tinta-media);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-top: 0.2rem;
-    }
-    .painel-trilho {
-      width: 100%;
-      height: 10px;
-      background: var(--creme-fundo);
-      border-radius: 3px;
-      overflow: hidden;
-      margin-bottom: 0.75rem;
-    }
-    .painel-onda {
-      height: 100%;
-      width: 3.12%;
-      background: linear-gradient(90deg, var(--terra-clara), var(--terra), var(--brasa));
-      border-radius: 3px;
-    }
-    .painel-rodape {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.78rem;
-      color: var(--tinta-media);
-    }
-    .painel-rodape strong { color: var(--tinta); font-weight: 700; }
+    .chamada { padding: 1.55rem 0 1.05rem; text-align: center; }
+    .chamada-tag {
+      display: inline-block;
+      background: var(--brasa-veu);
+      color: var(--brasa-fundo);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.95rem;
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+      border: 1px solid #f7c9bd;
+      font-family: 'Figtree', sans-serif;
+      animation: piscar 1.8s infinite;
+      will-change: opacity;
+    }
+    @keyframes piscar {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    .chamada h1 {
+      font-family: 'Figtree', system-ui, sans-serif;
+      font-size: clamp(1.42rem, 5.2vw, 2rem);
+      font-weight: 800;
+      line-height: 1.22;
+      color: var(--cacau);
+      margin-bottom: 0.7rem;
+      text-wrap: balance;
+    }
+    .chamada p {
+      font-size: 1rem;
+      color: var(--tinta-media);
+      line-height: 1.7;
+      max-width: 540px;
+      margin: 0 auto;
+    }
 
-    .selo-pix {
-      font-size: 0.73rem;
-      color: var(--tinta-media);
-      text-align: center;
-      margin-bottom: 1.8rem;
-    }
+    .capa { margin-bottom: 1.45rem; }
+    .capa-img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      max-height: min(86vh, 680px);
+      object-fit: cover;
+      object-position: center 18%;
+      border-radius: 8px 8px 0 0;
+      box-shadow: 0 10px 28px rgba(74,43,34,0.24);
+    }
+    .capa-nota {
+      background: var(--cacau);
+      color: rgba(255,255,255,0.88);
+      border-radius: 0 0 8px 8px;
+      padding: 0.72rem 1rem;
+      font-size: 0.8rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
 
-    hr.divisa { border: none; border-top: 1px solid var(--linha); margin: 1.8rem 0; }
+    .painel-meta {
+      background: var(--folha);
+      border: 1px solid var(--linha);
+      border-radius: 8px;
+      padding: 1.3rem 1.15rem 1.1rem;
+      margin-bottom: 1.35rem;
+      box-shadow: 0 4px 18px rgba(74,43,34,0.08);
+    }
+    .painel-topo {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.8rem;
+    }
+    .painel-cifra {
+      font-size: 1.92rem;
+      font-weight: 800;
+      color: var(--terra-fundo);
+      line-height: 1;
+      font-family: 'Figtree', sans-serif;
+    }
+    .painel-sub { font-size: 0.76rem; color: var(--tinta-media); margin-top: 0.28rem; }
+    .painel-pct {
+      font-size: 1.92rem;
+      font-weight: 800;
+      color: var(--brasa);
+      line-height: 1;
+      text-align: right;
+      font-family: 'Figtree', sans-serif;
+    }
+    .painel-pct small {
+      display: block;
+      font-size: 0.6rem;
+      font-weight: 800;
+      color: var(--tinta-media);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+    .painel-trilho {
+      width: 100%;
+      height: 10px;
+      background: var(--creme-fundo);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+    }
+    .painel-onda {
+      height: 100%;
+      width: 3.12%;
+      background: linear-gradient(90deg, var(--terra-clara), var(--terra), var(--brasa));
+      border-radius: 3px;
+    }
+    .painel-rodape {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--tinta-media);
+    }
+    .painel-rodape strong { color: var(--tinta); font-weight: 700; }
 
-    .bloco { margin-bottom: 1.55rem; }
-    .bloco-titulo {
-      font-family: 'Figtree', system-ui, sans-serif;
-      font-size: 1.14rem;
-      font-weight: 700;
-      line-height: 1.32;
-      color: var(--folha);
-      background: var(--cacau);
-      padding: 0.7rem 1rem;
-      border-radius: 6px;
-      margin-bottom: 0.9rem;
-    }
-    .bloco p {
-      font-size: 0.98rem;
-      color: var(--tinta);
-      line-height: 1.84;
-      margin-bottom: 0.78rem;
-      padding: 0 0.1rem;
-    }
-    .bloco p:last-child { margin-bottom: 0; }
-    .bloco strong { color: var(--cacau); }
+    .selo-pix {
+      font-size: 0.73rem;
+      color: var(--tinta-media);
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
 
-    /* Caixa Médica Explicativa */
-    .caixa-medica {
-      background: #ffffff;
-      border: 2px solid var(--terra);
-      border-radius: 8px;
-      padding: 1.15rem;
-      margin: 1.2rem 0;
-      box-shadow: 0 4px 14px rgba(227,131,47,0.12);
-    }
-    .caixa-medica-titulo {
-      font-family: 'Figtree', sans-serif;
-      font-size: 1.02rem;
-      font-weight: 800;
-      color: var(--terra-fundo);
-      margin-bottom: 0.6rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .caixa-medica p {
-      font-size: 0.92rem;
-      line-height: 1.7;
-      color: var(--tinta);
-      margin-bottom: 0.6rem;
-    }
-    .caixa-medica ul {
-      margin: 0.5rem 0 0.5rem 1.2rem;
-      font-size: 0.9rem;
-      color: var(--tinta);
-      line-height: 1.6;
-    }
-    .caixa-medica li { margin-bottom: 0.3rem; }
+    hr.divisa { border: none; border-top: 1px solid var(--linha); margin: 1.8rem 0; }
 
-    .alerta-forte {
-      background: var(--brasa-veu);
-      border-left: 4px solid var(--brasa);
-      border-radius: 0 6px 6px 0;
-      padding: 0.74rem 0.95rem;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: #a62d1a;
-      line-height: 1.58;
-      margin: 0.7rem 0;
-    }
+    .bloco { margin-bottom: 1.55rem; }
+    .bloco-titulo {
+      font-family: 'Figtree', system-ui, sans-serif;
+      font-size: 1.14rem;
+      font-weight: 700;
+      line-height: 1.32;
+      color: var(--folha);
+      background: var(--cacau);
+      padding: 0.7rem 1rem;
+      border-radius: 6px;
+      margin-bottom: 0.9rem;
+    }
+    .bloco p {
+      font-size: 0.98rem;
+      color: var(--tinta);
+      line-height: 1.84;
+      margin-bottom: 0.78rem;
+      padding: 0 0.1rem;
+    }
+    .bloco p:last-child { margin-bottom: 0; }
+    .bloco strong { color: var(--cacau); }
 
-    .frase-forte {
-      text-align: center;
-      font-family: 'Figtree', system-ui, sans-serif;
-      font-size: 1.12rem;
-      font-weight: 700;
-      color: var(--cacau);
-      background: linear-gradient(135deg, var(--creme), var(--brasa-veu));
-      border-radius: 8px;
-      padding: 1.1rem 1.15rem;
-      margin: 1.15rem 0;
-      line-height: 1.5;
-    }
+    /* Caixa Médica Explicativa */
+    .caixa-medica {
+      background: #ffffff;
+      border: 2px solid var(--terra);
+      border-radius: 8px;
+      padding: 1.15rem;
+      margin: 1.2rem 0;
+      box-shadow: 0 4px 14px rgba(227,131,47,0.12);
+    }
+    .caixa-medica-titulo {
+      font-family: 'Figtree', sans-serif;
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--terra-fundo);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .caixa-medica p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: var(--tinta);
+      margin-bottom: 0.6rem;
+    }
+    .caixa-medica ul {
+      margin: 0.5rem 0 0.5rem 1.2rem;
+      font-size: 0.9rem;
+      color: var(--tinta);
+      line-height: 1.6;
+    }
+    .caixa-medica li { margin-bottom: 0.3rem; }
 
-    .fala-familia {
-      background: var(--creme);
-      border: 1px solid var(--linha);
-      border-radius: 8px;
-      padding: 1.15rem 1.2rem;
-      margin: 1.25rem 0;
-      font-size: 0.96rem;
-      font-style: italic;
-      color: var(--tinta);
-      line-height: 1.78;
-    }
-    .fala-abre { font-style: normal; font-weight: 800; color: var(--terra-fundo); font-family: 'Figtree', sans-serif; }
-    .fala-familia cite {
-      display: block;
-      margin-top: 0.55rem;
-      font-size: 0.76rem;
-      font-style: normal;
-      font-weight: 800;
-      color: var(--cacau);
-    }
+    .alerta-forte {
+      background: var(--brasa-veu);
+      border-left: 4px solid var(--brasa);
+      border-radius: 0 6px 6px 0;
+      padding: 0.74rem 0.95rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #a62d1a;
+      line-height: 1.58;
+      margin: 0.7rem 0;
+    }
 
-    .caixa-seguranca {
-      background: #f0f7f4;
-      border: 1px solid #bce3cf;
-      border-radius: 8px;
-      padding: 1.15rem;
-      margin: 1.5rem 0;
-    }
-    .caixa-seguranca h3 {
-      font-family: 'Figtree', system-ui, sans-serif;
-      font-size: 0.95rem;
-      color: #13795b;
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .caixa-seguranca p {
-      font-size: 0.86rem;
-      color: var(--tinta-media);
-      line-height: 1.6;
-      margin-bottom: 0.4rem;
-    }
-    .caixa-seguranca p:last-child { margin-bottom: 0; }
+    .frase-forte {
+      text-align: center;
+      font-family: 'Figtree', system-ui, sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--cacau);
+      background: linear-gradient(135deg, var(--creme), var(--brasa-veu));
+      border-radius: 8px;
+      padding: 1.1rem 1.15rem;
+      margin: 1.15rem 0;
+      line-height: 1.5;
+    }
 
-    .doar-cabeca { text-align: center; margin-bottom: 1.15rem; }
-    .doar-cabeca h2 {
-      font-family: 'Figtree', system-ui, sans-serif;
-      font-size: 1.32rem;
-      font-weight: 700;
-      margin-bottom: 0.35rem;
-      line-height: 1.25;
-      color: var(--cacau);
-    }
-    .doar-cabeca p { font-size: 0.88rem; color: var(--tinta-media); line-height: 1.6; }
+    .fala-familia {
+      background: var(--creme);
+      border: 1px solid var(--linha);
+      border-radius: 8px;
+      padding: 1.15rem 1.2rem;
+      margin: 1.25rem 0;
+      font-size: 0.96rem;
+      font-style: italic;
+      color: var(--tinta);
+      line-height: 1.78;
+    }
+    .fala-abre { font-style: normal; font-weight: 800; color: var(--terra-fundo); font-family: 'Figtree', sans-serif; }
+    .fala-familia cite {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.76rem;
+      font-style: normal;
+      font-weight: 800;
+      color: var(--cacau);
+    }
 
-    /* Estilos da Grade de Botões de Doação */
-    .grade-valores {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin: 15px 0 20px 0;
-      align-items: end;
-    }
-    .btn-valor {
-      background: #ffffff;
-      border: 2px solid #e3832f;
-      color: #4a2b22;
-      font-size: 1.05rem;
-      font-weight: 800;
-      padding: 12px 5px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      font-family: 'Figtree', sans-serif;
-      width: 100%;
-      text-align: center;
-      touch-action: manipulation;
-    }
-    .btn-valor:hover, .btn-valor.selecionado {
-      background: #e3832f;
-      color: #ffffff;
-      border-color: #c86c1f;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(227,131,47,0.35);
-    }
-    .btn-valor-caixa-destaque {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      width: 100%;
-    }
-    .tag-destaque {
-      background: #e8432b;
-      color: #ffffff;
-      font-size: 0.58rem;
-      font-weight: 900;
-      padding: 3px 6px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      margin-bottom: 4px;
-      white-space: nowrap;
-      box-shadow: 0 2px 6px rgba(232,67,43,0.3);
-      font-family: 'Figtree', sans-serif;
-    }
-    .btn-destaque {
-      background: linear-gradient(135deg, #e8432b, #c7331d) !important;
-      color: #ffffff !important;
-      border: 2px solid #a62d1a !important;
-      box-shadow: 0 4px 14px rgba(232,67,43,0.4);
-    }
+    .caixa-seguranca {
+      background: #f0f7f4;
+      border: 1px solid #bce3cf;
+      border-radius: 8px;
+      padding: 1.15rem;
+      margin: 1.5rem 0;
+    }
+    .caixa-seguranca h3 {
+      font-family: 'Figtree', system-ui, sans-serif;
+      font-size: 0.95rem;
+      color: #13795b;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .caixa-seguranca p {
+      font-size: 0.86rem;
+      color: var(--tinta-media);
+      line-height: 1.6;
+      margin-bottom: 0.4rem;
+    }
+    .caixa-seguranca p:last-child { margin-bottom: 0; }
 
-    .depoimentos { margin-bottom: 1.8rem; }
-    .depoimentos-titulo {
-      font-size: 0.8rem;
-      font-weight: 800;
-      color: var(--tinta-media);
-      margin-bottom: 1rem;
-      font-family: 'Figtree', sans-serif;
-    }
-    .depoimento { border-bottom: 1px solid var(--linha); padding: 1rem 0; }
-    .depoimento:last-child { border-bottom: none; }
-    .depoimento-topo { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
-    .depoimento-foto {
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      object-fit: cover;
-      border: 2px solid var(--terra);
-      filter: contrast(1.1) saturate(0.86) brightness(1.05);
-    }
-    .depoimento-nome { font-size: 0.86rem; font-weight: 800; color: var(--tinta); line-height: 1.2; }
-    .depoimento-tempo { font-size: 0.72rem; color: var(--tinta-media); font-weight: 600; }
-    .depoimento p { font-size: 0.9rem; color: var(--tinta); line-height: 1.68; margin-bottom: 0.5rem; }
-    .depoimento-curtida {
-      display: flex;
-      align-items: center;
-      gap: 0.26rem;
-      font-size: 0.77rem;
-      color: var(--tinta-media);
-    }
+    .doar-cabeca { text-align: center; margin-bottom: 1.15rem; }
+    .doar-cabeca h2 {
+      font-family: 'Figtree', system-ui, sans-serif;
+      font-size: 1.32rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      line-height: 1.25;
+      color: var(--cacau);
+    }
+    .doar-cabeca p { font-size: 0.88rem; color: var(--tinta-media); line-height: 1.6; }
 
-    .fecho-apelo {
-      background: var(--cacau);
-      color: rgba(255,255,255,0.92);
-      border-radius: 8px;
-      padding: 1.15rem 1.2rem;
-      text-align: center;
-      margin-bottom: 1.8rem;
-    }
-    .fecho-apelo p { font-size: 0.88rem; line-height: 1.65; margin-bottom: 0.55rem; }
-    .fecho-apelo strong { color: var(--terra-clara); }
+    /* Estilos da Grade de Botões de Doação */
+    .grade-valores {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 15px 0 20px 0;
+      align-items: end;
+    }
+    .btn-valor {
+      background: #ffffff;
+      border: 2px solid #e3832f;
+      color: #4a2b22;
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 12px 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Figtree', sans-serif;
+      width: 100%;
+      text-align: center;
+      touch-action: manipulation;
+    }
+    .btn-valor:hover, .btn-valor.selecionado {
+      background: #e3832f;
+      color: #ffffff;
+      border-color: #c86c1f;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(227,131,47,0.35);
+    }
+    .btn-valor-caixa-destaque {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      width: 100%;
+    }
+    .tag-destaque {
+      background: #e8432b;
+      color: #ffffff;
+      font-size: 0.58rem;
+      font-weight: 900;
+      padding: 3px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      box-shadow: 0 2px 6px rgba(232,67,43,0.3);
+      font-family: 'Figtree', sans-serif;
+    }
+    .btn-destaque {
+      background: linear-gradient(135deg, #e8432b, #c7331d) !important;
+      color: #ffffff !important;
+      border: 2px solid #a62d1a !important;
+      box-shadow: 0 4px 14px rgba(232,67,43,0.4);
+    }
 
-    .faq-ar { margin-bottom: 5rem; }
-    .faq-ar h3 {
-      font-size: 0.74rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--tinta-media);
-      margin-bottom: 1rem;
-      font-family: 'Figtree', sans-serif;
-    }
-    .faq-linha { border-bottom: 1px solid var(--linha); }
-    .faq-pergunta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 0.88rem 0;
-      cursor: pointer;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      font-weight: 800;
-      font-family: inherit;
-      color: var(--tinta);
-      background: transparent;
-      border: 0;
-      text-align: left;
-      user-select: none;
-      touch-action: manipulation;
-    }
-    .faq-sinal { color: var(--brasa); font-size: 1.2rem; transition: transform 0.25s; flex-shrink: 0; }
-    .faq-pergunta.expandida .faq-sinal { transform: rotate(45deg); }
-    .faq-resposta {
-      max-height: 0;
-      overflow: hidden;
-      font-size: 0.86rem;
-      color: var(--tinta-media);
-      line-height: 1.75;
-      transition: max-height 0.3s ease, padding 0.3s;
-    }
-    .faq-resposta.expandida { max-height: 380px; padding-bottom: 1rem; }
+    .depoimentos { margin-bottom: 1.8rem; }
+    .depoimentos-titulo {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--tinta-media);
+      margin-bottom: 1rem;
+      font-family: 'Figtree', sans-serif;
+    }
+    .depoimento { border-bottom: 1px solid var(--linha); padding: 1rem 0; }
+    .depoimento:last-child { border-bottom: none; }
+    .depoimento-topo { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .depoimento-foto {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      object-fit: cover;
+      border: 2px solid var(--terra);
+      filter: contrast(1.1) saturate(0.86) brightness(1.05);
+    }
+    .depoimento-nome { font-size: 0.86rem; font-weight: 800; color: var(--tinta); line-height: 1.2; }
+    .depoimento-tempo { font-size: 0.72rem; color: var(--tinta-media); font-weight: 600; }
+    .depoimento p { font-size: 0.9rem; color: var(--tinta); line-height: 1.68; margin-bottom: 0.5rem; }
+    .depoimento-curtida {
+      display: flex;
+      align-items: center;
+      gap: 0.26rem;
+      font-size: 0.77rem;
+      color: var(--tinta-media);
+    }
 
-    .rodape-jpv {
-      background: linear-gradient(135deg, var(--cacau-noite), var(--terra-fundo));
-      color: rgba(255,255,255,0.9);
-      padding: 1.65rem 1rem;
-      text-align: center;
-      font-size: 0.75rem;
-      line-height: 1.95;
-      border-top: 4px solid var(--terra-clara);
-    }
-    .rodape-jpv strong { color: var(--terra-clara); }
+    .fecho-apelo {
+      background: var(--cacau);
+      color: rgba(255,255,255,0.92);
+      border-radius: 8px;
+      padding: 1.15rem 1.2rem;
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+    .fecho-apelo p { font-size: 0.88rem; line-height: 1.65; margin-bottom: 0.55rem; }
+    .fecho-apelo strong { color: var(--terra-clara); }
 
-    .cta-fixo {
-      position: fixed;
-      bottom: 1rem;
-      left: 0;
-      right: 0;
-      width: fit-content;
-      min-width: 250px;
-      max-width: 420px;
-      margin: 0 auto;
-      display: block;
-      background: linear-gradient(135deg, var(--brasa), var(--brasa-fundo));
-      color: var(--folha);
-      font-size: 0.86rem;
-      font-weight: 800;
-      text-align: center;
-      padding: 0.9rem 1.35rem;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      z-index: 99;
-      box-shadow: 0 8px 24px rgba(199,51,29,0.48);
-      font-family: 'Figtree', sans-serif;
-      transition: filter 0.2s;
-      touch-action: manipulation;
-    }
-    .cta-fixo:hover { filter: brightness(1.05); }
+    .faq-ar { margin-bottom: 5rem; }
+    .faq-ar h3 {
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--tinta-media);
+      margin-bottom: 1rem;
+      font-family: 'Figtree', sans-serif;
+    }
+    .faq-linha { border-bottom: 1px solid var(--linha); }
+    .faq-pergunta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0.88rem 0;
+      cursor: pointer;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      font-family: inherit;
+      color: var(--tinta);
+      background: transparent;
+      border: 0;
+      text-align: left;
+      user-select: none;
+      touch-action: manipulation;
+    }
+    .faq-sinal { color: var(--brasa); font-size: 1.2rem; transition: transform 0.25s; flex-shrink: 0; }
+    .faq-pergunta.expandida .faq-sinal { transform: rotate(45deg); }
+    .faq-resposta {
+      max-height: 0;
+      overflow: hidden;
+      font-size: 0.86rem;
+      color: var(--tinta-media);
+      line-height: 1.75;
+      transition: max-height 0.3s ease, padding 0.3s;
+    }
+    .faq-resposta.expandida { max-height: 380px; padding-bottom: 1rem; }
 
-    /* Botão Flutuante do WhatsApp */
-    .whatsapp-fixo {
-      position: fixed;
-      bottom: 4.8rem;
-      left: 0;
-      right: 0;
-      width: fit-content;
-      min-width: 250px;
-      max-width: 420px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: #25d366;
-      color: #ffffff;
-      font-size: 0.86rem;
-      font-weight: 800;
-      text-align: center;
-      padding: 0.85rem 1.35rem;
-      border-radius: 6px;
-      z-index: 98;
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-      font-family: 'Figtree', sans-serif;
-      transition: filter 0.2s;
-      touch-action: manipulation;
-    }
-    .whatsapp-fixo:hover { filter: brightness(1.05); }
+    .rodape-jpv {
+      background: linear-gradient(135deg, var(--cacau-noite), var(--terra-fundo));
+      color: rgba(255,255,255,0.9);
+      padding: 1.65rem 1rem;
+      text-align: center;
+      font-size: 0.75rem;
+      line-height: 1.95;
+      border-top: 4px solid var(--terra-clara);
+    }
+    .rodape-jpv strong { color: var(--terra-clara); }
 
-    @media (max-width: 600px) {
-      .selo-figura { height: 78px; }
-      .capa-img {
-        aspect-ratio: 3 / 4;
-        max-height: min(84vh, 620px);
-        object-position: center 16%;
-        border-radius: 6px 6px 0 0;
-      }
-      .chamada { padding: 1.2rem 0 0.85rem; }
-      .coluna { padding: 0 0.9rem; }
-      .painel-meta { padding: 1.1rem 0.95rem 0.95rem; }
-      .painel-cifra, .painel-pct { font-size: 1.68rem; }
-      .cta-fixo, .whatsapp-fixo { min-width: 0; width: calc(100% - 1.6rem); max-width: calc(100% - 1.6rem); font-size: 0.82rem; padding: 0.88rem 0.85rem; }
-      .whatsapp-fixo { bottom: 4.5rem; }
-      .faq-ar { margin-bottom: 6.5rem; }
-      .grade-valores { grid-template-columns: repeat(4, 1fr); gap: 6px; }
-      .btn-valor { font-size: 0.88rem; padding: 10px 2px; }
-      .tag-destaque { font-size: 0.5rem; padding: 2px 4px; }
-    }
+    .cta-fixo {
+      position: fixed;
+      bottom: 1rem;
+      left: 0;
+      right: 0;
+      width: fit-content;
+      min-width: 250px;
+      max-width: 420px;
+      margin: 0 auto;
+      display: block;
+      background: linear-gradient(135deg, var(--brasa), var(--brasa-fundo));
+      color: var(--folha);
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-align: center;
+      padding: 0.9rem 1.35rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      z-index: 99;
+      box-shadow: 0 8px 24px rgba(199,51,29,0.48);
+      font-family: 'Figtree', sans-serif;
+      transition: filter 0.2s;
+      touch-action: manipulation;
+    }
+    .cta-fixo:hover { filter: brightness(1.05); }
 
-    @media (max-width: 360px) {
-      .selo-figura { height: 70px; }
-      .chamada h1 { font-size: 1.26rem; }
-      .grade-valores { grid-template-columns: repeat(4, 1fr); }
-    }
+    /* Botão Flutuante do WhatsApp */
+    .whatsapp-fixo {
+      position: fixed;
+      bottom: 4.8rem;
+      left: 0;
+      right: 0;
+      width: fit-content;
+      min-width: 250px;
+      max-width: 420px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25d366;
+      color: #ffffff;
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-align: center;
+      padding: 0.85rem 1.35rem;
+      border-radius: 6px;
+      z-index: 98;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      font-family: 'Figtree', sans-serif;
+      transition: filter 0.2s;
+      touch-action: manipulation;
+    }
+    .whatsapp-fixo:hover { filter: brightness(1.05); }
 
-    @media (min-width: 560px) {
-      .selo-figura { height: 70px; }
-    }
-  </style>
+    @media (max-width: 600px) {
+      .selo-figura { height: 78px; }
+      .capa-img {
+        aspect-ratio: 3 / 4;
+        max-height: min(84vh, 620px);
+        object-position: center 16%;
+        border-radius: 6px 6px 0 0;
+      }
+      .chamada { padding: 1.2rem 0 0.85rem; }
+      .coluna { padding: 0 0.9rem; }
+      .painel-meta { padding: 1.1rem 0.95rem 0.95rem; }
+      .painel-cifra, .painel-pct { font-size: 1.68rem; }
+      .cta-fixo, .whatsapp-fixo { min-width: 0; width: calc(100% - 1.6rem); max-width: calc(100% - 1.6rem); font-size: 0.82rem; padding: 0.88rem 0.85rem; }
+      .whatsapp-fixo { bottom: 4.5rem; }
+      .faq-ar { margin-bottom: 6.5rem; }
+      .grade-valores { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+      .btn-valor { font-size: 0.88rem; padding: 10px 2px; }
+      .tag-destaque { font-size: 0.5rem; padding: 2px 4px; }
+    }
+
+    @media (max-width: 360px) {
+      .selo-figura { height: 70px; }
+      .chamada h1 { font-size: 1.26rem; }
+      .grade-valores { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    @media (min-width: 560px) {
+      .selo-figura { height: 70px; }
+    }
+  </style>
 </head>
 <body data-campanha="juntos-pelo-miguelzinho-2026">
 
-  <header class="cabecalho-selo">
-   <img src="logo.jpg" alt="Abrace uma Vida" class="selo-figura" width="150" height="94" loading="eager" decoding="async">
-  </header>
+  <header class="cabecalho-selo">
+   <img src="logo.jpg" alt="Abrace uma Vida" class="selo-figura" width="150" height="94" loading="eager" decoding="async">
+  </header>
 
-  <main class="coluna">
+  <main class="coluna">
 
-    <div class="chamada">
-      <span class="chamada-tag">🚨 SOCORRO URGENTE: SARCOMA DE PARTES MOLES</span>
-      <h1>"Meu filho já está há 4 meses lutando contra um Sarcoma de Partes Moles na coluna. O tempo está esgotando e ele precisa muito da sua ajuda!"</h1>
-      <p>O pequeno Miguelzinho enfrenta um <strong>Sarcoma de Partes Moles</strong> — um tipo de câncer agressivo que formou um tumor perigoso na coluna e nas costas dele. <strong>Precisamos comprar os remédios com urgência para salvar a vida dele!</strong></p>
-    </div>
+    <div class="chamada">
+      <span class="chamada-tag">🚨 SOCORRO URGENTE: SARCOMA DE PARTES MOLES</span>
+      <h1>"Meu filho já está há 4 meses lutando contra um Sarcoma de Partes Moles na coluna. O tempo está esgotando e ele precisa muito da sua ajuda!"</h1>
+      <p>O pequeno Miguelzinho enfrenta um <strong>Sarcoma de Partes Moles</strong> — um tumor maligno agressivo na coluna e nas costas. <strong>Precisamos comprar os remédios com urgência para salvar a vida dele!</strong></p>
+    </div>
 
-    <figure class="capa">
-     <img src="capa-miguel-respirar.jpg" alt="Miguelzinho em tratamento contra o Sarcoma" class="capa-img" fetchpriority="high" width="600" height="800" decoding="sync">
-      <figcaption class="capa-nota">Miguelzinho hoje: Enfrentando há 4 meses as dores e o desgaste do Sarcoma de Partes Moles na coluna...</figcaption>
-    </figure>
+    <figure class="capa">
+     <img src="capa-miguel-respirar.jpg" alt="Miguelzinho em tratamento contra o Sarcoma" class="capa-img" fetchpriority="high" width="600" height="800" decoding="sync">
+      <figcaption class="capa-nota">Miguelzinho hoje: Enfrentando há 4 meses as dores e o desgaste do Sarcoma de Partes Moles na coluna...</figcaption>
+    </figure>
 
-    <div class="painel-meta">
-      <div class="painel-topo">
-        <div>
-          <div class="painel-cifra">R$ 2.184,00</div>
-          <div class="painel-sub">arrecadados de R$ 70.000,00</div>
-        </div>
-        <div class="painel-pct">3,12%<small>da meta</small></div>
-      </div>
-      <div class="painel-trilho"><div class="painel-onda" style="width:3.12%"></div></div>
-      <div class="painel-rodape">
-        <span><strong>81 pessoas</strong> já ajudaram</span>
-        <span><strong>precisamos</strong> de mais apoio</span>
-      </div>
-    </div>
+    <div class="painel-meta">
+      <div class="painel-topo">
+        <div>
+          <div class="painel-cifra">R$ 2.184,00</div>
+          <div class="painel-sub">arrecadados de R$ 70.000,00</div>
+        </div>
+        <div class="painel-pct">3,12%<small>da meta</small></div>
+      </div>
+      <div class="painel-trilho"><div class="painel-onda" style="width:3.12%"></div></div>
+      <div class="painel-rodape">
+        <span><strong>81 pessoas</strong> já ajudaram</span>
+        <span><strong>precisamos</strong> de mais apoio</span>
+      </div>
+    </div>
 
-    <!-- SEÇÃO DE DOAÇÃO PIX LOGO ABAIXO DA META (SEM ÂNCORA PARA NÃO PULAR A TELA) -->
-    <section>
-      <div class="doar-cabeca">
-        <h2>Faça sua Doação Pix Rápida</h2>
-        <p>Escolha um valor abaixo, escaneie o QR Code ou clique no botão verde para copiar a chave Pix e ajudar o Miguelzinho.</p>
-      </div>
+    <!-- SEÇÃO DE DOAÇÃO PIX (ESTILO DAURA / SEGURO E CRIPTOGRAFADO) -->
+    <section id="ajudar-miguel">
+      <div class="doar-cabeca">
+        <h2>Ajude a manter o Miguelzinho lutando</h2>
+        <p>Escolha um valor abaixo, escaneie o QR Code ou clique no botão verde para copiar a chave Pix e ajudar a salvar o nosso filho.</p>
+      </div>
 
-      <!-- Grade de Botões de Valores Rápidos -->
-      <div class="grade-valores">
-        <button type="button" class="btn-valor" onclick="selecionarValor('10')">R$ 10</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('20')">R$ 20</button>
-        
-        <div class="btn-valor-caixa-destaque">
-          <span class="tag-destaque">🔥 MAIS ESCOLHIDO</span>
-          <button class="btn-valor btn-destaque" onclick="selecionarValor('50')">R$ 50</button>
-        </div>
+      <!-- Grade de Botões de Valores Rápidos -->
+      <div class="grade-valores">
+        <button class="btn-valor" onclick="selecionarValor('10')">R$ 10</button>
+        <button class="btn-valor" onclick="selecionarValor('20')">R$ 20</button>
+        
+        <div class="btn-valor-caixa-destaque">
+          <span class="tag-destaque">🔥 MAIS ESCOLHIDO</span>
+          <button class="btn-valor btn-destaque" onclick="selecionarValor('50')">R$ 50</button>
+        </div>
 
-        <button type="button" class="btn-valor" onclick="selecionarValor('100')">R$ 100</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('200')">R$ 200</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('300')">R$ 300</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
-      </div>
-     
-      <div style="text-align: center; margin: 25px 0;">
-          <!-- Imagem do QR Code -->
-          <img src="flow.jpg" alt="Código QR para fazer uma doação via Pix" width="400" height="400" loading="lazy" decoding="async" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto 15px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <button class="btn-valor" onclick="selecionarValor('100')">R$ 100</button>
+        <button class="btn-valor" onclick="selecionarValor('200')">R$ 200</button>
+        <button class="btn-valor" onclick="selecionarValor('300')">R$ 300</button>
+        <button class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
+        <button class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
+      </div>
 
-          <!-- Botão de Copiar Chave Pix -->
-          <button type="button" onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 15px 30px; font-size: 19px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-              📋 Copiar Chave Pix (E-mail)
-          </button>
-      </div>
+      <!-- Card com QR Code e Destinatário idêntico ao padrão seguro -->
+      <div style="text-align: center; margin: 25px 0;">
+        <div style="background-color: #dbeafe; border-radius: 16px; padding: 20px; max-width: 420px; margin: 0 auto 15px auto; box-shadow: 0 4px 14px rgba(0,0,0,0.08); border: 1px solid #bfdbfe;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            
+            <!-- QR Code -->
+            <img src="flow.jpg" alt="Código QR Pix" style="width: 170px; height: 170px; border-radius: 8px; object-fit: cover;">
+            
+            <!-- Dados da Chave e Destinatário -->
+            <div style="text-align: left; max-width: 180px;">
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: #1e3a8a; margin-bottom: 4px; line-height: 1.2;">
+                Destinatário:<br>Danilo Augusto<br><span style="font-size: 0.9rem; font-weight: 600; color: #3b82f6;">(Pai do Miguel)</span>
+              </h3>
+              <p style="font-size: 0.85rem; font-weight: 700; color: #1e40af; margin-top: 8px; line-height: 1.3; word-break: break-all;">
+                Chave Pix:<br><span style="color: #000;">pixpelomiguel@gmail.com</span>
+              </p>
+              <div style="display: flex; align-items: center; gap: 4px; font-size: 0.75rem; color: #3b82f6; margin-top: 10px; font-weight: 600;">
+                <span>Apoie com Pix</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9l6 6-6 6"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+              </div>
+            </div>
 
-      <!-- Script de seleção do valor e cópia do Pix -->
-      <script>
-      function selecionarValor(valor) {
-          document.querySelectorAll('.btn-valor').forEach(btn => btn.classList.remove('selecionado'));
-          const alvo = String(valor);
-          document.querySelectorAll('.btn-valor').forEach(btn => {
-              if (btn.textContent.replace(/\D/g, '') === alvo) btn.classList.add('selecionado');
-          });
-          copiarPix();
-      }
+          </div>
+        </div>
 
-      function copiarPix() {
-          const chavePix = "pixpelomiguel@gmail.com";
-          const btn = document.getElementById("btn-copiar-pix");
+        <!-- Botão Verde de Copiar Chave Pix -->
+        <button onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 15px 30px; font-size: 17px; font-weight: 800; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.2); width: 100%; max-width: 420px; font-family: 'Figtree', sans-serif;">
+          📋 Copiar Chave Pix (E-mail)
+        </button>
 
-          const confirmar = () => {
-              btn.textContent = "✅ Chave Pix Copiada com Sucesso!";
-              btn.style.backgroundColor = "#128c7e";
-              setTimeout(() => {
-                  btn.textContent = "📋 Copiar Chave Pix (E-mail)";
-                  btn.style.backgroundColor = "#25d366";
-              }, 3000);
-          };
+        <!-- Caixa de texto de segurança para celulares antigos -->
+        <div style="margin-top: 15px;">
+          <span style="background-color: #2563eb; color: white; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Se o botão não funcionar, copie a chave abaixo:</span>
+          <div style="margin-top: 6px;">
+            <label for="texto-pix" class="sr-only">Chave Pix para copiar manualmente</label>
+            <input type="text" id="texto-pix" value="pixpelomiguel@gmail.com" readonly onclick="this.select();" style="width: 100%; max-width: 320px; padding: 10px; text-align: center; font-size: 14px; border: 1px solid #fde047; border-radius: 6px; background: #fef08a; color: #1e3a8a; font-weight: 800; outline: none;">
+          </div>
+        </div>
+      </div>
 
-          const fallback = () => {
-              const area = document.createElement("textarea");
-              area.value = chavePix;
-              area.setAttribute("readonly", "");
-              area.style.position = "fixed";
-              area.style.opacity = "0";
-              document.body.appendChild(area);
-              area.select();
-              try { document.execCommand("copy"); confirmar(); }
-              finally { document.body.removeChild(area); }
-          };
+      <!-- Script de seleção do valor e cópia do Pix -->
+      <script>
+      function selecionarValor(valor) {
+          document.querySelectorAll('.btn-valor').forEach(btn => btn.classList.remove('selecionado'));
+          const alvo = String(valor);
+          document.querySelectorAll('.btn-valor').forEach(btn => {
+              if (btn.textContent.replace(/\D/g, '') === alvo) btn.classList.add('selecionado');
+          });
+          copiarPix();
+      }
 
-          if (navigator.clipboard && window.isSecureContext) {
-              navigator.clipboard.writeText(chavePix).then(confirmar).catch(fallback);
-          } else {
-              fallback();
-          }
-      }
-      </script>
+      function copiarPix() {
+          const chavePix = "pixpelomiguel@gmail.com"; 
+          const btn = document.getElementById("btn-copiar-pix");
+          const inputPix = document.getElementById("texto-pix");
 
-      <!-- Caixa de Segurança Simples e Direta -->
-      <div class="caixa-seguranca">
-        <h3>🔒 Doação 100% Segura e Verificada</h3>
-        <p><strong>• Sistema Oficial do Banco Central:</strong> Sua doação é processada com total segurança e criptografia bancária pelo seu aplicativo.</p>
-        <p><strong>• Destino Garantido:</strong> Todo o valor arrecadado é transferido diretamente para a compra dos medicamentos e custos médicos do Sarcoma de Partes Moles.</p>
-        <p><strong>• Transparência Total:</strong> Campanha monitorada em parceria direta com os pais do Miguelzinho.</p>
-      </div>
+          const confirmar = () => {
+              btn.textContent = "✅ Chave Pix Copiada com Sucesso!";
+              btn.style.backgroundColor = "#128c7e";
+              setTimeout(() => {
+                  btn.textContent = "📋 Copiar Chave Pix (E-mail)";
+                  btn.style.backgroundColor = "#25d366";
+              }, 3000);
+          };
 
-      <p class="selo-pix" style="margin-top:0.75rem">🔒 Pix Seguro · Leva menos de 1 minuto</p>
-    </section>
+          const fallback = () => {
+              inputPix.focus();
+              inputPix.select();
+              try {
+                  document.execCommand('copy');
+                  confirmar();
+              } catch (err) {
+                  btn.innerHTML = "⚠️ Selecione a chave acima e copie";
+              }
+          };
 
-    <hr class="divisa">
+          if (navigator.clipboard && window.isSecureContext) {
+              navigator.clipboard.writeText(chavePix).then(confirmar).catch(fallback);
+          } else {
+              fallback();
+          }
+      }
+      </script>
 
-    <section class="bloco">
-      <h2 class="bloco-titulo">⚠️ Entenda a gravidade: O que é o Sarcoma de Partes Moles?</h2>
-      
-      <!-- Explicação Clínica Simples do Sarcoma -->
-      <div class="caixa-medica">
-        <div class="caixa-medica-titulo">📋 Laudo Médico e Diagnóstico</div>
-        <p>O <strong>Sarcoma de Partes Moles</strong> é um tumor maligno raro que ataca os tecidos de sustentação do corpo, como músculos e nervos.</p>
-        <p>Como o tumor do Miguelzinho cresceu bem na região da <strong>coluna</strong>, ele causa consequências graves:</p>
-        <ul>
-          <li><strong>Dores insuportáveis:</strong> O tumor aperta os nervos da coluna dia e noite.</li>
-          <li><strong>Caroço visível e inchaço:</strong> A lesão avança e consome as forças do menino.</li>
-          <li><strong>Risco gravíssimo:</strong> Sem o tratamento adequado e contínuo, a doença pode paralisar e destruir a saúde dele rapidamente.</li>
-        </ul>
-        <p style="margin-bottom:0; font-size:0.85rem; color:var(--terra-fundo); font-weight:700;">
-          💊 Os remédios e exames necessários para travar esse câncer são caríssimos e a família não tem como pagar sozinha.
-        </p>
-      </div>
+      <!-- Caixa de Segurança Simples e Direta -->
+      <div class="caixa-seguranca">
+        <h3>🔒 Doação 100% Segura e Verificada</h3>
+        <p><strong>• Sistema Oficial do Banco Central:</strong> Sua doação é processada com total segurança e criptografia bancária pelo seu aplicativo.</p>
+        <p><strong>• Destino Garantido:</strong> Todo o valor arrecadado é transferido diretamente para a compra dos medicamentos e custos médicos do Sarcoma de Partes Moles.</p>
+        <p><strong>• Transparência Total:</strong> Campanha monitorada em parceria direta com os pais do Miguelzinho.</p>
+      </div>
 
-      <p>Já são 4 meses de uma rotina pesada de hospitais, exames caros e muita angústia. O dinheiro público não cobre os remédios necessários a tempo.</p>
-      <div class="alerta-forte">⚠️ Cada valor arrecadado vai direto para garantir os medicamentos vitais que mantêm o Miguelzinho lutando.</div>
-    </section>
+      <p class="selo-pix" id="atalho-doar" style="margin-top:0.75rem">🔒 PIX 100% Seguro · Leva menos de 1 minuto</p>
+    </section>
 
-    <section class="bloco">
-      <h2 class="bloco-titulo">👨‍👩‍👧 Uma família sem dinheiro e esgotada.</h2>
-      <p>Depois de 4 meses lutando contra a doença, os pais do Miguelzinho já gastaram tudo o que tinham. Eles não têm mais de onde tirar dinheiro nem para a condução até o hospital.</p>
-      <p>Qualquer valor no Pix faz uma diferença gigante nessa reta decisiva. <strong>Ajude a salvar essa criança!</strong></p>
-    </section>
+    <hr class="divisa">
 
-    <div class="fala-familia">
-      <span class="fala-abre">💚 Pedido de socorro dos pais</span><br>
-      Já são 4 meses vendo nosso filho sofrer com esse Sarcoma na coluna. Ver ele chorando de dor e não ter dinheiro para comprar o remédio é uma dor que destrói a gente. Por favor, nos ajudem a salvar o Miguelzinho. 🙏
-      <cite>— Pai do Miguelzinho</cite>
-    </div>
+    <section class="bloco">
+      <h2 class="bloco-titulo">⚠️ Entenda a gravidade: O que é o Sarcoma de Partes Moles?</h2>
+      
+      <!-- Explicação Clínica Simples do Sarcoma -->
+      <div class="caixa-medica">
+        <div class="caixa-medica-titulo">📋 Laudo Médico e Diagnóstico</div>
+        <p>O <strong>Sarcoma de Partes Moles</strong> é um tumor maligno raro que ataca os tecidos de sustentação do corpo, como músculos e nervos.</p>
+        <p>Como o tumor do Miguelzinho cresceu bem na região da <strong>coluna</strong>, ele causa consequências graves:</p>
+        <ul>
+          <li><strong>Dores insuportáveis:</strong> O tumor aperta os nervos da coluna dia e noite.</li>
+          <li><strong>Caroço visível e inchaço:</strong> A lesão avança e consome as forças do menino.</li>
+          <li><strong>Risco gravíssimo:</strong> Sem o tratamento adequado e contínuo, a doença pode paralisar e destruir a saúde dele rapidamente.</li>
+        </ul>
+        <p style="margin-bottom:0; font-size:0.85rem; color:var(--terra-fundo); font-weight:700;">
+          💊 Os remédios e exames necessários para travar esse câncer são caríssimos e a família não tem como pagar sozinha.
+        </p>
+      </div>
 
-    <section class="bloco">
-      <h2 class="bloco-titulo">Não feche esta página. O Miguelzinho precisa de você agora!</h2>
-      <p>Há um pai de família sofrendo atrás desta tela, lutando há 4 meses para não perder o filho para o câncer.</p>
-      <p><strong>Sozinhos eles não conseguem, mas com a ajuda de todos nós, vamos conseguir comprar esse tratamento!</strong></p>
-      <div class="frase-forte">Faça uma boa ação hoje. Doe qualquer valor pelo Pix e ajude a vencer esse câncer.</div>
-    </section>
+      <p>Já são 4 meses de uma rotina pesada de hospitais, exames caros e muita angústia. O dinheiro público não cobre os remédios necessários a tempo.</p>
+      <div class="alerta-forte">⚠️ Cada valor arrecadado vai direto para garantir os medicamentos vitais que mantêm o Miguelzinho lutando.</div>
+    </section>
 
-    <hr class="divisa">
+    <section class="bloco">
+      <h2 class="bloco-titulo">👨‍👩‍👧 Uma família sem dinheiro e esgotada.</h2>
+      <p>Depois de 4 meses lutando contra a doença, os pais do Miguelzinho já gastaram tudo o que tinham. Eles não têm mais de onde tirar dinheiro nem para a condução até o hospital.</p>
+      <p>Qualquer valor no Pix faz uma diferença gigante nessa reta decisiva. <strong>Ajude a salvar essa criança!</strong></p>
+    </section>
 
-    <section class="depoimentos">
-      <p class="depoimentos-titulo">Quem já ajudou o Miguelzinho (3)</p>
+    <div class="fala-familia">
+      <span class="fala-abre">💚 Pedido de socorro dos pais</span><br>
+      Já são 4 meses vendo nosso filho sofrer com esse Sarcoma na coluna. Ver ele chorando de dor e não ter dinheiro para comprar o remédio é uma dor que destrói a gente. Por favor, nos ajudem a salvar o Miguelzinho. 🙏
+      <cite>— Pai do Miguelzinho</cite>
+    </div>
 
-      <div class="depoimento">
-        <div class="depoimento-topo">
-          <img src="comentario-taina.jpg" alt="Foto de Roberta Lima" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 48% 22%;">
-          <div>
-            <div class="depoimento-nome">Roberta Lima</div>
-            <div class="depoimento-tempo">há 22 minutos</div>
-          </div>
-        </div>
-        <p>Acompanho a luta deles há meses... ver o sofrimento do menino com esse Sarcoma na coluna corta o coração. 😢 Já fiz minha doação e oro muito pela cura dele. ❤️🙏</p>
-        <div class="depoimento-curtida"><span>❤️</span> 302</div>
-      </div>
+    <section class="bloco">
+      <h2 class="bloco-titulo">Não feche esta página. O Miguelzinho precisa de você agora!</h2>
+      <p>Há um pai de família sofrendo atrás desta tela, lutando há 4 meses para não perder o filho para o câncer.</p>
+      <p><strong>Sozinhos eles não conseguem, mas com a ajuda de todos nós, vamos conseguir comprar esse tratamento!</strong></p>
+      <div class="frase-forte">Faça uma boa ação hoje. Doe qualquer valor pelo Pix e ajude a vencer esse câncer.</div>
+    </section>
 
-      <div class="depoimento">
-        <div class="depoimento-topo">
-          <img src="comentario-henrique.jpg" alt="Foto de Flávio Martins" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 18%;">
-          <div>
-            <div class="depoimento-nome">Flávio Martins</div>
-            <div class="depoimento-tempo">há 1 hora</div>
-          </div>
-        </div>
-        <p>Ninguém aguenta 4 meses lutando contra um câncer sem ajuda. Se cada um mandar um Pix pequeno, a gente bate essa meta. Já compartilhei no grupo da família! 🙏</p>
-        <div class="depoimento-curtida"><span>❤️</span> 286</div>
-      </div>
+    <hr class="divisa">
 
-      <div class="depoimento">
-        <div class="depoimento-topo">
-          <img src="comentario-luciana.jpg" alt="Foto de Simone Fátima" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 10%;">
-          <div>
-            <div class="depoimento-nome">Simone Fátima</div>
-            <div class="depoimento-tempo">há 3 horas</div>
-          </div>
-        </div>
-        <p>Sou mãe e me coloquei no lugar dessa família. É desumano ver a criança passar por isso. Fiz minha parte com o Pix. O Miguelzinho vai vencer essa! ✨</p>
-        <div class="depoimento-curtida"><span>❤️</span> 214</div>
-      </div>
-    </section>
+    <section class="depoimentos">
+      <p class="depoimentos-titulo">Quem já ajudou o Miguelzinho (3)</p>
 
-    <div class="fecho-apelo">
-      <p><strong>Ninguém vence o câncer sozinho.</strong> Mas juntos, nós podemos dar ao Miguelzinho o tratamento que ele precisa para viver.</p>
-      <p>Faça o seu Pix agora mesmo. Cada ajuda é preciosa!</p>
-      <p style="margin-bottom:0;font-size:0.8rem;opacity:0.7">Comentários encerrados para esta publicação</p>
-    </div>
+      <div class="depoimento">
+        <div class="depoimento-topo">
+          <img src="comentario-taina.jpg" alt="Foto de Roberta Lima" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 48% 22%;">
+          <div>
+            <div class="depoimento-nome">Roberta Lima</div>
+            <div class="depoimento-tempo">há 22 minutos</div>
+          </div>
+        </div>
+        <p>Acompanho a luta deles há meses... ver o sofrimento do menino com esse Sarcoma na coluna corta o coração. 😢 Já fiz minha doação e oro muito pela cura dele. ❤️🙏</p>
+        <div class="depoimento-curtida"><span>❤️</span> 302</div>
+      </div>
 
-    <hr class="divisa">
+      <div class="depoimento">
+        <div class="depoimento-topo">
+          <img src="comentario-henrique.jpg" alt="Foto de Flávio Martins" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 18%;">
+          <div>
+            <div class="depoimento-nome">Flávio Martins</div>
+            <div class="depoimento-tempo">há 1 hora</div>
+          </div>
+        </div>
+        <p>Ninguém aguenta 4 meses lutando contra um câncer sem ajuda. Se cada um mandar um Pix pequeno, a gente bate essa meta. Já compartilhei no grupo da família! 🙏</p>
+        <div class="depoimento-curtida"><span>❤️</span> 286</div>
+      </div>
 
-    <section class="faq-ar">
-      <h3>Perguntas frequentes</h3>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-1">
-          <span>O que é o Sarcoma de Partes Moles do Miguelzinho?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-1" hidden>É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
-      </div>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-2">
-          <span>Como faço para contribuir?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-2" hidden>Basta escolher um valor, copiar a chave Pix ou escanear o QR Code no seu aplicativo do banco. O envio é rápido e seguro.</div>
-      </div>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-3">
-          <span>O que é o Sarcoma de Partes Moles?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-3" hidden>É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
-      </div>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-4">
-          <span>A doação por Pix é segura?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-4" hidden>Sim, totalmente segura. O dinheiro vai direto para a conta oficial da família cuidar do tratamento médico dele.</div>
-      </div>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-5">
-          <span>Posso ajudar de outro jeito?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-5" hidden>Sim! Envie o link desta página no WhatsApp para seus amigos e familiares. Quanto mais pessoas souberem, mais rápido alcançamos a meta.</div>
-      </div>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-6">
-          <span>Para onde vai o dinheiro arrecadado?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-6" hidden>100% do dinheiro é utilizado inteiramente na compra dos remédios e nos gastos com o tratamento do câncer.</div>
-      </div>
-    </section>
+      <div class="depoimento">
+        <div class="depoimento-topo">
+          <img src="comentario-luciana.jpg" alt="Foto de Simone Fátima" class="depoimento-foto" width="46" height="46" loading="lazy" decoding="async" style="object-position: 50% 10%;">
+          <div>
+            <div class="depoimento-nome">Simone Fátima</div>
+            <div class="depoimento-tempo">há 3 horas</div>
+          </div>
+        </div>
+        <p>Sou mãe e me coloquei no lugar dessa família. É desumano ver a criança passar por isso. Fiz minha parte com o Pix. O Miguelzinho vai vencer essa! ✨</p>
+        <div class="depoimento-curtida"><span>❤️</span> 214</div>
+      </div>
+    </section>
 
-  </main>
+    <div class="fecho-apelo">
+      <p><strong>Ninguém vence o câncer sozinho.</strong> Mas juntos, nós podemos dar ao Miguelzinho o tratamento que ele precisa para viver.</p>
+      <p>Faça o seu Pix agora mesmo. Cada ajuda é preciosa!</p>
+      <p style="margin-bottom:0;font-size:0.8rem;opacity:0.7">Comentários encerrados para esta publicação</p>
+    </div>
 
-  <footer class="rodape-jpv">
-    <strong>Abrace uma Vida</strong> · Unidos por quem precisa de uma chance.<br>
-    Organizado em parce
+    <hr class="divisa">
+
+    <section class="faq-ar">
+      <h3>Perguntas frequentes</h3>
+      <div class="faq-linha">
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-1">
+          <span>O que é o Sarcoma de Partes Moles do Miguelzinho?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-1" hidden>É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
+      </div>
+      <div class="faq-linha">
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-2">
+          <span>Como faço para contribuir?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-2" hidden>Basta escolher um valor, copiar a chave Pix ou escanear o QR Code no seu aplicativo do banco. O envio é rápido e seguro.</div>
+      </div>
+      <div class="faq-linha">
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-3">
+          <span>A doação por Pix é segura?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-3" hidden>Sim, totalmente segura. O dinheiro vai direto para a conta oficial da família cuidar do tratamento médico dele.</div>
+      </div>
+      <div class="faq-linha">
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-4">
+          <span>Posso ajudar de outro jeito?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-4" hidden>Sim! Envie o link desta página no WhatsApp para seus amigos e familiares. Quanto mais pessoas souberem, mais rápido alcançamos a meta.</div>
+      </div>
+      <div class="faq-linha">
+        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-5">
+          <span>Para onde vai o dinheiro arrecadado?</span><span class="faq-sinal" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-resposta" id="faq-resposta-5" hidden>100% do dinheiro é utilizado inteiramente na compra dos remédios e nos gastos com o tratamento do câncer.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape-jpv">
+    <strong>Abrace uma Vida</strong> · Unidos por quem precisa de uma chance.<br>
+    Campanha de arrecadação para o tratamento do Miguelzinho<br>
+    © 2026 — Todos os direitos reservados
+  </footer>
+
+  <!-- Botões Fixos Inferiores -->
+  <a href="https://wa.me/5519987378488?text=Olá,%20vi%20a%20campanha%20do%20Miguelzinho%20e%20gostaria%20de%20falar%20com%20os%20pais." target="_blank" class="whatsapp-fixo">💬 Falar com os Pais do Miguelzinho (WhatsApp)</a>
+  <a href="#ajudar-miguel" class="cta-fixo">Quero ajudar a salvar o Miguelzinho</a>
+
+  <script>
+    document.querySelectorAll('.faq-pergunta').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const resposta = this.nextElementSibling;
+        const expandida = this.getAttribute('aria-expanded') === 'true';
+
+        this.setAttribute('aria-expanded', String(!expandida));
+        this.classList.toggle('expandida', !expandida);
+        resposta.hidden = expandida;
+        resposta.classList.toggle('expandida', !expandida);
+      });
+    });
+
+    document.getElementById('atalho-doar').addEventListener('click', function (ev) {
+      ev.preventDefault();
+      document.getElementById('ajudar-miguel').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
