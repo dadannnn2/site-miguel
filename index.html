@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STTBQL7467"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STTBQL7467');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=true;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2329575777877928');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2329575777877928&ev=PageView&noscript=1"/></noscript>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <meta name="theme-color" content="#4a2b22">
@@ -607,7 +631,7 @@
     <div class="chamada">
       <span class="chamada-tag">🚨 SOCORRO URGENTE: SARCOMA DE PARTES MOLES</span>
       <h1>"Meu filho já está há 4 meses lutando contra um Sarcoma de Partes Moles na coluna. O tempo está esgotando e ele precisa muito da sua ajuda!"</h1>
-      <p>O pequeno Miguelzinho enfrenta um <strong>Sarcoma de Partes Moles</strong> — um tipo de câncer agressivo que formou um tumor perigoso na coluna e nas costas dele. <strong>Precisamos comprar os remédios com urgência para salvar a vida dele!</strong></p>
+      <p>O pequeno Miguelzinho enfrenta um <strong>Sarcoma de Partes Moles</strong> — um tumor maligno agressivo na coluna e nas costas. <strong>Precisamos comprar os remédios com urgência para salvar a vida dele!</strong></p>
     </div>
 
     <figure class="capa">
@@ -630,8 +654,8 @@
       </div>
     </div>
 
-    <!-- SEÇÃO DE DOAÇÃO PIX IGUAL AO SITE DA LAURA (ADAPTADO PARA O MIGUEL) -->
-    <section>
+    <!-- SEÇÃO DE DOAÇÃO PIX (ESTILO DAURA / SEGURO E CRIPTOGRAFADO) -->
+    <section id="ajudar-miguel">
       <div class="doar-cabeca">
         <h2>Ajude a manter o Miguelzinho lutando</h2>
         <p>Escolha um valor abaixo, escaneie o QR Code ou clique no botão verde para copiar a chave Pix e ajudar a salvar o nosso filho.</p>
@@ -639,22 +663,22 @@
 
       <!-- Grade de Botões de Valores Rápidos -->
       <div class="grade-valores">
-        <button type="button" class="btn-valor" onclick="selecionarValor('10')">R$ 10</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('20')">R$ 20</button>
+        <button class="btn-valor" onclick="selecionarValor('10')">R$ 10</button>
+        <button class="btn-valor" onclick="selecionarValor('20')">R$ 20</button>
         
         <div class="btn-valor-caixa-destaque">
           <span class="tag-destaque">🔥 MAIS ESCOLHIDO</span>
           <button class="btn-valor btn-destaque" onclick="selecionarValor('50')">R$ 50</button>
         </div>
 
-        <button type="button" class="btn-valor" onclick="selecionarValor('100')">R$ 100</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('200')">R$ 200</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('300')">R$ 300</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
-        <button type="button" class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
+        <button class="btn-valor" onclick="selecionarValor('100')">R$ 100</button>
+        <button class="btn-valor" onclick="selecionarValor('200')">R$ 200</button>
+        <button class="btn-valor" onclick="selecionarValor('300')">R$ 300</button>
+        <button class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
+        <button class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
       </div>
 
-      <!-- Card com QR Code e Destinatário no Estilo do Site da Laura -->
+      <!-- Card com QR Code e Destinatário idêntico ao padrão seguro -->
       <div style="text-align: center; margin: 25px 0;">
         <div style="background-color: #dbeafe; border-radius: 16px; padding: 20px; max-width: 420px; margin: 0 auto 15px auto; box-shadow: 0 4px 14px rgba(0,0,0,0.08); border: 1px solid #bfdbfe;">
           <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
@@ -680,18 +704,18 @@
         </div>
 
         <!-- Botão Verde de Copiar Chave Pix -->
-        <button type="button" onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 14px 24px; font-size: 17px; font-weight: 800; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(37,211,102,0.3); display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; max-width: 420px; font-family: 'Figtree', sans-serif;">
+        <button onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 15px 30px; font-size: 17px; font-weight: 800; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.2); width: 100%; max-width: 420px; font-family: 'Figtree', sans-serif;">
           📋 Copiar Chave Pix (E-mail)
         </button>
 
-        <!-- Caixa Amarela de Fallback da Laura -->
-        <div style="margin-top: 10px;">
+        <!-- Caixa de texto de segurança para celulares antigos -->
+        <div style="margin-top: 15px;">
           <span style="background-color: #2563eb; color: white; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Se o botão não funcionar, copie a chave abaixo:</span>
           <div style="margin-top: 6px;">
-            <input type="text" readonly value="pixpelomiguel@gmail.com" style="background-color: #fef08a; border: 1px solid #fde047; color: #1e3a8a; font-weight: 800; font-size: 0.88rem; text-align: center; padding: 6px 12px; border-radius: 4px; width: 100%; max-width: 320px; outline: none;">
+            <label for="texto-pix" class="sr-only">Chave Pix para copiar manualmente</label>
+            <input type="text" id="texto-pix" value="pixpelomiguel@gmail.com" readonly onclick="this.select();" style="width: 100%; max-width: 320px; padding: 10px; text-align: center; font-size: 14px; border: 1px solid #fde047; border-radius: 6px; background: #fef08a; color: #1e3a8a; font-weight: 800; outline: none;">
           </div>
         </div>
-
       </div>
 
       <!-- Script de seleção do valor e cópia do Pix -->
@@ -706,8 +730,9 @@
       }
 
       function copiarPix() {
-          const chavePix = "pixpelomiguel@gmail.com";
+          const chavePix = "pixpelomiguel@gmail.com"; 
           const btn = document.getElementById("btn-copiar-pix");
+          const inputPix = document.getElementById("texto-pix");
 
           const confirmar = () => {
               btn.textContent = "✅ Chave Pix Copiada com Sucesso!";
@@ -719,15 +744,14 @@
           };
 
           const fallback = () => {
-              const area = document.createElement("textarea");
-              area.value = chavePix;
-              area.setAttribute("readonly", "");
-              area.style.position = "fixed";
-              area.style.opacity = "0";
-              document.body.appendChild(area);
-              area.select();
-              try { document.execCommand("copy"); confirmar(); }
-              finally { document.body.removeChild(area); }
+              inputPix.focus();
+              inputPix.select();
+              try {
+                  document.execCommand('copy');
+                  confirmar();
+              } catch (err) {
+                  btn.innerHTML = "⚠️ Selecione a chave acima e copie";
+              }
           };
 
           if (navigator.clipboard && window.isSecureContext) {
@@ -746,7 +770,7 @@
         <p><strong>• Transparência Total:</strong> Campanha monitorada em parceria direta com os pais do Miguelzinho.</p>
       </div>
 
-      <p class="selo-pix" style="margin-top:0.75rem">🔒 Pix Seguro · Leva menos de 1 minuto</p>
+      <p class="selo-pix" id="atalho-doar" style="margin-top:0.75rem">🔒 PIX 100% Seguro · Leva menos de 1 minuto</p>
     </section>
 
     <hr class="divisa">
@@ -858,27 +882,21 @@
       </div>
       <div class="faq-linha">
         <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-3">
-          <span>O que é o Sarcoma de Partes Moles?</span><span class="faq-sinal" aria-hidden="true">+</span>
+          <span>A doação por Pix é segura?</span><span class="faq-sinal" aria-hidden="true">+</span>
         </button>
-        <div class="faq-resposta" id="faq-resposta-3" hidden>É um tipo raro e grave de câncer que se instalou na coluna dele há 4 meses, causando muita dor e exigindo remédios caros e contínuos.</div>
+        <div class="faq-resposta" id="faq-resposta-3" hidden>Sim, totalmente segura. O dinheiro vai direto para a conta oficial da família cuidar do tratamento médico dele.</div>
       </div>
       <div class="faq-linha">
         <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-4">
-          <span>A doação por Pix é segura?</span><span class="faq-sinal" aria-hidden="true">+</span>
+          <span>Posso ajudar de outro jeito?</span><span class="faq-sinal" aria-hidden="true">+</span>
         </button>
-        <div class="faq-resposta" id="faq-resposta-4" hidden>Sim, totalmente segura. O dinheiro vai direto para a conta oficial da família cuidar do tratamento médico dele.</div>
+        <div class="faq-resposta" id="faq-resposta-4" hidden>Sim! Envie o link desta página no WhatsApp para seus amigos e familiares. Quanto mais pessoas souberem, mais rápido alcançamos a meta.</div>
       </div>
       <div class="faq-linha">
         <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-5">
-          <span>Posso ajudar de outro jeito?</span><span class="faq-sinal" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-resposta" id="faq-resposta-5" hidden>Sim! Envie o link desta página no WhatsApp para seus amigos e familiares. Quanto mais pessoas souberem, mais rápido alcançamos a meta.</div>
-      </div>
-      <div class="faq-linha">
-        <button type="button" class="faq-pergunta" aria-expanded="false" aria-controls="faq-resposta-6">
           <span>Para onde vai o dinheiro arrecadado?</span><span class="faq-sinal" aria-hidden="true">+</span>
         </button>
-        <div class="faq-resposta" id="faq-resposta-6" hidden>100% do dinheiro é utilizado inteiramente na compra dos remédios e nos gastos com o tratamento do câncer.</div>
+        <div class="faq-resposta" id="faq-resposta-5" hidden>100% do dinheiro é utilizado inteiramente na compra dos remédios e nos gastos com o tratamento do câncer.</div>
       </div>
     </section>
 
@@ -886,8 +904,31 @@
 
   <footer class="rodape-jpv">
     <strong>Abrace uma Vida</strong> · Unidos por quem precisa de uma chance.<br>
-    Organizado em parceria direta com a família do Miguelzinho.
+    Campanha de arrecadação para o tratamento do Miguelzinho<br>
+    © 2026 — Todos os direitos reservados
   </footer>
 
+  <!-- Botões Fixos Inferiores -->
+  <a href="https://wa.me/5519987378488?text=Olá,%20vi%20a%20campanha%20do%20Miguelzinho%20e%20gostaria%20de%20falar%20com%20os%20pais." target="_blank" class="whatsapp-fixo">💬 Falar com os Pais do Miguelzinho (WhatsApp)</a>
+  <a href="#ajudar-miguel" class="cta-fixo">Quero ajudar a salvar o Miguelzinho</a>
+
+  <script>
+    document.querySelectorAll('.faq-pergunta').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const resposta = this.nextElementSibling;
+        const expandida = this.getAttribute('aria-expanded') === 'true';
+
+        this.setAttribute('aria-expanded', String(!expandida));
+        this.classList.toggle('expandida', !expandida);
+        resposta.hidden = expandida;
+        resposta.classList.toggle('expandida', !expandida);
+      });
+    });
+
+    document.getElementById('atalho-doar').addEventListener('click', function (ev) {
+      ev.preventDefault();
+      document.getElementById('ajudar-miguel').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
