@@ -18,21 +18,21 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --brasa:      #e8432b;
+      --brasa:        #e8432b;
       --brasa-fundo:  #c7331d;
       --brasa-veu:    #fdeae5;
-      --terra:      #e3832f;
+      --terra:        #e3832f;
       --terra-fundo:  #c86c1f;
       --terra-clara:  #f6a93b;
-      --cacau:      #4a2b22;
+      --cacau:        #4a2b22;
       --cacau-noite:  #30170f;
-      --creme:      #fdf1e6;
+      --creme:        #fdf1e6;
       --creme-fundo:  #f8e2cd;
-      --papel:      #fffaf5;
-      --folha:      #ffffff;
-      --tinta:      #3b231c;
+      --papel:        #fffaf5;
+      --folha:        #ffffff;
+      --tinta:        #3b231c;
       --tinta-media:  #7c5c4f;
-      --linha:      #ecd8c5;
+      --linha:        #ecd8c5;
     }
 
     html { 
@@ -630,11 +630,11 @@
       </div>
     </div>
 
-    <!-- SEÇÃO DE DOAÇÃO PIX LOGO ABAIXO DA META (SEM ÂNCORA PARA NÃO PULAR A TELA) -->
+    <!-- SEÇÃO DE DOAÇÃO PIX IGUAL AO SITE DA LAURA (ADAPTADO PARA O MIGUEL) -->
     <section>
       <div class="doar-cabeca">
-        <h2>Faça sua Doação Pix Rápida</h2>
-        <p>Escolha um valor abaixo, escaneie o QR Code ou clique no botão verde para copiar a chave Pix e ajudar o Miguelzinho.</p>
+        <h2>Ajude a manter o Miguelzinho lutando</h2>
+        <p>Escolha um valor abaixo, escaneie o QR Code ou clique no botão verde para copiar a chave Pix e ajudar a salvar o nosso filho.</p>
       </div>
 
       <!-- Grade de Botões de Valores Rápidos -->
@@ -653,15 +653,45 @@
         <button type="button" class="btn-valor" onclick="selecionarValor('500')">R$ 500</button>
         <button type="button" class="btn-valor" onclick="selecionarValor('1000')">R$ 1.000</button>
       </div>
-     
-      <div style="text-align: center; margin: 25px 0;">
-          <!-- Imagem do QR Code -->
-          <img src="flow.jpg" alt="Código QR para fazer uma doação via Pix" width="400" height="400" loading="lazy" decoding="async" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto 15px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
 
-          <!-- Botão de Copiar Chave Pix -->
-          <button type="button" onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 15px 30px; font-size: 19px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-              📋 Copiar Chave Pix (E-mail)
-          </button>
+      <!-- Card com QR Code e Destinatário no Estilo do Site da Laura -->
+      <div style="text-align: center; margin: 25px 0;">
+        <div style="background-color: #dbeafe; border-radius: 16px; padding: 20px; max-width: 420px; margin: 0 auto 15px auto; box-shadow: 0 4px 14px rgba(0,0,0,0.08); border: 1px solid #bfdbfe;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            
+            <!-- QR Code -->
+            <img src="flow.jpg" alt="Código QR Pix" style="width: 170px; height: 170px; border-radius: 8px; object-fit: cover;">
+            
+            <!-- Dados da Chave e Destinatário -->
+            <div style="text-align: left; max-width: 180px;">
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: #1e3a8a; margin-bottom: 4px; line-height: 1.2;">
+                Destinatário:<br>Danilo Augusto<br><span style="font-size: 0.9rem; font-weight: 600; color: #3b82f6;">(Pai do Miguel)</span>
+              </h3>
+              <p style="font-size: 0.85rem; font-weight: 700; color: #1e40af; margin-top: 8px; line-height: 1.3; word-break: break-all;">
+                Chave Pix:<br><span style="color: #000;">pixpelomiguel@gmail.com</span>
+              </p>
+              <div style="display: flex; align-items: center; gap: 4px; font-size: 0.75rem; color: #3b82f6; margin-top: 10px; font-weight: 600;">
+                <span>Apoie com Pix</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9l6 6-6 6"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Botão Verde de Copiar Chave Pix -->
+        <button type="button" onclick="copiarPix()" id="btn-copiar-pix" style="background-color: #25d366; color: white; border: none; padding: 14px 24px; font-size: 17px; font-weight: 800; border-radius: 8px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 10px rgba(37,211,102,0.3); display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; max-width: 420px; font-family: 'Figtree', sans-serif;">
+          📋 Copiar Chave Pix (E-mail)
+        </button>
+
+        <!-- Caixa Amarela de Fallback da Laura -->
+        <div style="margin-top: 10px;">
+          <span style="background-color: #2563eb; color: white; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Se o botão não funcionar, copie a chave abaixo:</span>
+          <div style="margin-top: 6px;">
+            <input type="text" readonly value="pixpelomiguel@gmail.com" style="background-color: #fef08a; border: 1px solid #fde047; color: #1e3a8a; font-weight: 800; font-size: 0.88rem; text-align: center; padding: 6px 12px; border-radius: 4px; width: 100%; max-width: 320px; outline: none;">
+          </div>
+        </div>
+
       </div>
 
       <!-- Script de seleção do valor e cópia do Pix -->
@@ -856,26 +886,8 @@
 
   <footer class="rodape-jpv">
     <strong>Abrace uma Vida</strong> · Unidos por quem precisa de uma chance.<br>
-    Organizado em parceria com a família do Miguelzinho<br>
-    © 2026 — Todos os direitos reservados
+    Organizado em parceria direta com a família do Miguelzinho.
   </footer>
 
-  <!-- Botões Fixos Inferiores (WhatsApp e Doação sem âncora) -->
-  <a href="https://wa.me/5519987378488?text=Olá,%20vi%20a%20campanha%20do%20Miguelzinho%20e%20gostaria%20de%20falar%20com%20a%20família." target="_blank" class="whatsapp-fixo" aria-label="Falar com o pai do Miguelzinho pelo WhatsApp">💬 Falar com o Pai do Miguelzinho (WhatsApp)</a
-  <a href="https://wa.me/5519987378488?text=Olá,%20quero%20ajudar%20o%20Miguelzinho%20com%20o%20Pix." target="_blank" class="cta-fixo" aria-label="Falar com o pai do Miguelzinho pelo WhatsApp para doar via Pix">DOAR VIA PIX AGORA PARA SALVAR O MIGUELZINHO 🙏</a
-
-  <script>
-    document.querySelectorAll('.faq-pergunta').forEach(function (item) {
-      item.addEventListener('click', function () {
-        const resposta = this.nextElementSibling;
-        const expandida = this.getAttribute('aria-expanded') === 'true';
-
-        this.setAttribute('aria-expanded', String(!expandida));
-        this.classList.toggle('expandida', !expandida);
-        resposta.hidden = expandida;
-        resposta.classList.toggle('expandida', !expandida);
-      });
-    });
-  </script>
 </body>
 </html>
